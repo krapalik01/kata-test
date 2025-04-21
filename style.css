@@ -1,0 +1,238 @@
+body {
+    font-family: "TT Lakes", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+.header {
+    background-color: white;
+    height: 88px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__icon {
+    margin-top: 24px; 
+    width: 40px;
+    height: 40px;
+}
+.header__icon_hiden {
+    display: none;
+    margin-top: 24px; 
+    width: 40px;
+    height: 40px;
+}
+.header__group {
+    margin-top: 19px;
+    width: 97px;
+    height: 51px;
+}
+
+.header__stick {
+    background-image: url(/img/divider.svg);
+    margin-top: 28px;
+    width: 2px;
+    height: 32px;
+}
+
+.header__stick_hiden {
+    background-image: url(/img/divider.svg);
+    margin-top: 28px;
+    width: 2px;
+    height: 32px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    width: 304px;
+    height: 40px;
+}
+
+.title__img {
+    background-image:url(/img/highlight.svg) ;
+    margin-right: 12px;
+    height: 40px;
+    width: 4px;
+}
+
+.title__text {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.title__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.title__items {
+    display: none;
+    margin-left: 450px;
+}
+.title__item {
+    display: flex;
+    align-items: center;
+    width: 168px;
+    height: 40px;
+}
+.title__item:first-child {
+ margin-right: 32px;
+}
+.title__iconText {
+    margin-right:8px ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: right;
+}
+
+
+
+
+.nav-scroller__items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 20px 0 0 24px;
+  }
+
+  .nav-scroller__item {
+    color: #7E7E82;
+    background-color: #F8F8F8;
+    display: flex;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #F8F8F8;
+  }
+
+  .nav-scroller__item:active {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+  }
+
+.expand-button {
+    margin: 16px 0px 16px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.article__text {
+    margin: 24px 16px 0px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+
+}
+.article__textFirst_hiden {
+    display: none;
+    margin-right:16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+}
+.article__textSecond_hiden {
+    display: none;
+    margin-right:16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+}
+
+.article__picture {
+    width: 100%; 
+}
+
+@media (min-width: 768px) {
+    .header__icon_hiden {
+        display: block;
+    }
+
+    .header__stick_hiden {
+        display: block;
+    }
+    .header__group {
+        margin-right: 225px;
+    }
+    .header__icon:first-child {
+        margin-left: 10px;
+    }
+    .header__icon:last-child {
+        margin-right: 10px;
+    }
+    .article {
+        width: 384px;
+        height: 208px;
+        margin: 24px 0 0 24px;
+    }
+
+    .article__picture {
+        width: 360px;
+        height: 208px;
+        border-radius: 5px;
+    }
+    .article__text {
+        margin: 0px 75px 0px 0px;
+    }
+    .article__textFirst_hiden {
+        display: block;
+        margin: 25px 75px 0px 0px;
+    }
+    .expand-button {
+        margin-bottom:0px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+    .nav-scroller__items {
+        flex-wrap: wrap;
+    }
+    .article {
+        width: 560px;
+        height: 307px;
+    }
+    .article__picture {
+        width: 532px;
+        height: 307px;
+    }
+    .article__textFirst_hiden {
+        display: none;
+    }
+    .article__textSecond_hiden {
+        display: block;
+        margin: 25px 75px 0px 0px;
+    }
+    .title {
+        margin-top: 38px;
+        width: 1096px;
+    }
+    .title__icon_hiden {
+        display: block;
+    }
+    .title__items {
+        display: flex;
+    }
+}
