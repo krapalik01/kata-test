@@ -1,6 +1,7 @@
-body {
+* {
     font-family: "TT Lakes", sans-serif;
-    font-weight: normal;
+}
+body {
     margin: 0;
     background-color: #F8F8F8;
 }
@@ -76,7 +77,7 @@ body {
 .title__item {
     display: flex;
     align-items: center;
-    width: 168px;
+    width: 170px;
     height: 40px;
 }
 .title__item:first-child {
@@ -90,11 +91,7 @@ body {
     letter-spacing: -0.2px;
     text-align: right;
 }
-
-
-
-
-.nav-scroller__items {
+.nav-scroller {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -207,7 +204,7 @@ body {
     .header {
         display: none;
     }
-    .nav-scroller__items {
+    .nav-scroller {
         flex-wrap: wrap;
     }
     .article {
