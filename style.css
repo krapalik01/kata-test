@@ -12,7 +12,6 @@
 	font-family: TT Lakes;
 	src:url('fonts/TTLakes/TTLakes-Regular.woff');
 }
-
 * {
     font-family: "TT Lakes";
 }
@@ -87,7 +86,8 @@ body {
 
 .title__items {
     display: none;
-    margin-left: 450px;
+    margin-left: auto;
+    margin-right: 32px;
 }
 .title__item {
     display: flex;
@@ -193,15 +193,19 @@ body {
         margin-right: 10px;
     }
     .article {
-        width: 384px;
         height: 208px;
         margin: 24px 0 0 24px;
     }
 
     .article__picture {
+        margin-right: 25px;
+        margin-left: auto;
         width: 360px;
         height: 208px;
         border-radius: 5px;
+    }
+    .article__items {
+        width: 51%;
     }
     .article__text {
         margin: 0px 75px 0px 0px;
@@ -223,10 +227,14 @@ body {
         flex-wrap: wrap;
     }
     .article {
-        width: 560px;
         height: 307px;
     }
+    .article__items {
+        width: 51%;
+    }
     .article__picture {
+        margin-right: 28px;
+        margin-left: auto;
         width: 532px;
         height: 307px;
     }
@@ -239,7 +247,7 @@ body {
     }
     .title {
         margin-top: 38px;
-        width: 1096px;
+        width: 100%;
     }
     .title__icon_hiden {
         display: block;
