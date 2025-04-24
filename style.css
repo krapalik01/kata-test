@@ -61,36 +61,36 @@ ul {
 }
 
 .header__stick {
-    background-image: url(/img/divider.svg);
+    background-image: url(img/divider.svg);
     margin-top: 28px;
     width: 2px;
     height: 32px;
 }
 
 .header__stick_hiden {
-    background-image: url(/img/divider.svg);
+    background-image: url(img/divider.svg);
     margin-top: 28px;
     width: 2px;
     height: 32px;
 }
 
 .header__icon--burger {
-    background-image: url(/img/burger.svg);
+    background-image: url(img/burger.svg);
 }
 .header__icon--call {
-    background-image: url(/img/call.svg);
+    background-image: url(img/call.svg);
 }
 .header__icon--chat {
-    background-image: url(/img/chat.svg);
+    background-image: url(img/chat.svg);
 }
 .header__icon--profile {
-    background-image: url(/img/profile.svg);
+    background-image: url(img/profile.svg);
 }
 .header__icon--repair {
-    background-image: url(/img/repair.svg);
+    background-image: url(img/repair.svg);
 }
 .header__icon--checkstatus {
-    background-image: url(/img/checkstatus.svg);
+    background-image: url(img/checkstatus.svg);
 }
 
 .title {
@@ -102,7 +102,7 @@ ul {
 }
 
 .title__img {
-    background-image:url(/img/highlight.svg);
+    background-image:url(img/highlight.svg);
     margin-right: 12px;
     height: 40px;
     width: 4px;
@@ -144,10 +144,10 @@ ul {
 }
 
 .title__icon--repair {
-    background-image: url(/img/repair.svg);
+    background-image: url(img/repair.svg);
 }
 .title__icon--checkstatus {
-    background-image: url(/img/checkstatus.svg);
+    background-image: url(img/checkstatus.svg);
 }
 
 .nav-scroller {
@@ -185,7 +185,7 @@ ul {
     background-color: #F8F8F8;
 }
 .expand-button__img {
-    background-image: url(/img/expand.svg);
+    background-image: url(img/expand.svg);
     height: 24px;
     width: 24px;
 }
