@@ -271,6 +271,9 @@ ul {
         display: block;
         margin: 25px 75px 0px 0px;
     }
+    .expand-button {
+        margin-bottom: 0;
+    }    
 }
 
 @media (min-width: 1120px) {
