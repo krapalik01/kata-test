@@ -46,6 +46,18 @@ ul {
     border-radius: 50%;
     border: none;
 }
+.headerBurger__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+.contact__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
 .header__icon_hiden {
     display: none;
     margin-top: 24px; 
@@ -76,6 +88,12 @@ ul {
 
 .header__icon--burger {
     background-image: url(img/burger.svg);
+}
+.header__icon--search {
+    background-image: url(img/search.svg);
+}
+.header__icon--openBurger {
+    background-image: url(img/openBurger.svg);
 }
 .header__icon--call {
     background-image: url(img/call.svg);
@@ -232,6 +250,99 @@ ul {
     width: 100%; 
 }
 
+/* Бургер меню */
+.burgerMenu {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow:16px 0px 52px #0E185033;
+    
+    width: 320px;
+}
+.headerMenu {
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerBurger__icon:first-child {
+    margin: 0px -55px 0px 24px ;
+}
+.headerBurger__icon:last-child {
+    margin: 0px 24px 0px 0px ;
+}
+.mainMenu{
+margin-top: 27px;
+}
+.navBurger {
+    list-style: none;
+    width: 222px;
+}
+.navBurger a {
+    width: 100%;
+    display: block;
+    padding: 14px 14px;
+    text-decoration: none;
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.burgerMenu .navBurger__item a:hover {
+    transition: 0.5s;
+    color: #7E7E82;
+    background-image: url(img/highlight.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    }
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 24px;
+}
+.contact__icons {
+    margin: 275px 0 0 0;
+    display: flex;
+    gap: 16px;
+}
+.contact__mail{
+    margin-top: 15px;
+}
+.contact__mail a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+.contact__number{
+    margin-top: 10px;
+}
+.contact__number a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+}
+.contact__lang {
+    display: flex;
+    gap: 5px;
+    margin: 22px 0 50px 0;
+}
+.contact__lang a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+.contact__lang a:hover {
+    transition: 0.5s;
+    color: #7E7E82;
+}
 @media (min-width: 768px) {
     .header__icon_hiden {
         display: block;
