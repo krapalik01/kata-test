@@ -46,7 +46,7 @@ ul {
     border-radius: 50%;
     border: none;
 }
-.headerBurger__icon {
+.headerMenu__icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -264,10 +264,10 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-.headerBurger__icon:first-child {
+.headerMenu__icon:first-child {
     margin: 0px -55px 0px 24px ;
 }
-.headerBurger__icon:last-child {
+.headerMenu__icon:last-child {
     margin: 0px 24px 0px 0px ;
 }
 .mainMenu{
