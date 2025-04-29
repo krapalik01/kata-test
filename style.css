@@ -52,6 +52,12 @@ ul {
     border-radius: 50%;
     border: none;
 }
+.burger-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
 .contact__icon {
     width: 40px;
     height: 40px;
@@ -92,7 +98,7 @@ ul {
 .header__icon--search {
     background-image: url(img/search.svg);
 }
-.header__icon--openBurger {
+.burger-icon--openBurger {
     background-image: url(img/openBurger.svg);
 }
 .header__icon--call {
@@ -255,8 +261,9 @@ ul {
     position: fixed;
     background-color: #ffffff;
     box-shadow:16px 0px 52px #0E185033;
-    
+    overflow: hidden;
     width: 320px;
+    height: 100%;
 }
 .headerMenu {
     padding-top: 18px;
@@ -264,7 +271,7 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-.headerMenu__icon:first-child {
+.headerMenu .burger-icon:first-child {
     margin: 0px -55px 0px 24px ;
 }
 .headerMenu__icon:last-child {
@@ -299,7 +306,7 @@ margin-top: 27px;
     flex-direction: column;
     margin: 0 0 0 24px;
 }
-.contact__icons {
+.contact-icons {
     margin: 275px 0 0 0;
     display: flex;
     gap: 16px;
