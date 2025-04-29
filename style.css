@@ -257,7 +257,9 @@ ul {
 }
 
 /* Бургер меню */
-.burgerMenu {
+.burgerMenu {  
+    display: flex;
+    flex-direction: column;
     position: fixed;
     background-color: #ffffff;
     box-shadow:16px 0px 52px #0E185033;
@@ -278,7 +280,7 @@ ul {
     margin: 0px 24px 0px 0px ;
 }
 .mainMenu{
-margin-top: 27px;
+margin: 27px 0 auto 0;
 }
 .navBurger {
     list-style: none;
@@ -307,7 +309,6 @@ margin-top: 27px;
     margin: 0 0 0 24px;
 }
 .contact-icons {
-    margin: 275px 0 0 0;
     display: flex;
     gap: 16px;
 }
@@ -336,7 +337,7 @@ margin-top: 27px;
 .contact__lang {
     display: flex;
     gap: 5px;
-    margin: 22px 0 50px 0;
+    margin: 22px 0 32px 0;
 }
 .contact__lang a {
     text-decoration: none;
