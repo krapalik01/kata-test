@@ -268,13 +268,13 @@ ul {
     height: 100%;
 }
 .headerMenu {
-    padding-top: 18px;
+    padding: 18px 0 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.headerMenu .burger-icon:first-child {
-    margin: 0px -55px 0px 24px ;
+.headerMenu img {  
+   margin-left: -55px; 
 }
 .headerMenu__icon:last-child {
     margin: 0px 24px 0px 0px ;
