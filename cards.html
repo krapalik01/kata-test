@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scable=0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+
+    <!-- Хедер -->
+    <div class="head-cards">
+<span class="head-cards__title" >Ремонт техники различных брендов</span>
+    </div>
+
+    <!-- градиент на свайпере -->
+    <div class="fade"></div>
+
+    <!-- Свайпер мобилка -->
+     <div class="mySwiper">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img src="img/cards/Bitmap.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img src="img/cards/samsung.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img src="img/cards/apple.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img src="img/cards/ViewSonic.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img src="img/cards/Bosch.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img class="swiper-slide__img" src="img/cards/hp.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img src="img/cards/acer.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+            <li class="swiper-slide">
+                <button class="swiper-slide__button">
+                    <img src="img/cards/sony.svg" alt="">
+                    <div class="swiper-slide__go"></div>
+                </button>
+            </li>
+        </ul>
+        <div class="mySwiper__pagination"></div>
+    </div>
+
+    <!-- Свайпер десктоп -->
+    <div class="cards">
+        <ul class="cards-list">
+            <li class="cards-slide">
+                <button class="cards-slide__button">
+                    <img src="img/cards/Bitmap.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide">
+                <button class="cards-slide__button">
+                    <img src="img/cards/samsung.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide">
+                <button class="cards-slide__button">
+                    <img src="img/cards/apple.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide">
+                <button class="cards-slide__button">
+                    <img src="img/cards/ViewSonic.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide">
+                <button class="cards-slide__button">
+                    <img src="img/cards/Bosch.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide">
+                <button class="cards-slide__button">
+                    <img class="cards__img" src="img/cards/hp.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide firstHiden" style="display: none;">
+                <button class="cards-slide__button">
+                    <img src="img/cards/acer.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide firstHiden" style="display: none;">
+                <button class="cards-slide__button">
+                    <img src="img/cards/sony.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide firstHiden secondHiden" style="display: none;">
+                <button class="cards-slide__button">
+                    <img src="img/cards/Bitmap.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide firstHiden secondHiden" style="display: none;">
+                <button class="cards-slide__button">
+                    <img src="img/cards/samsung.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+            <li class="cards-slide firstHiden secondHiden" style="display: none;">
+                <button class="cards-slide__button">
+                    <img src="img/cards/apple.svg" alt="">
+                    <div class="cards-slide__go"></div>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <button class="cards-button">
+        <div class="cards-button__img_768px"></div>
+        <span id="text1" class="cards-button__text_768px">Показать всё</span>
+</button>
+    <button class="cards-button_1120px">
+    <div class="cards-button__img_1120px"></div>
+    <span id="text2" class="cards-button__text_1220px">Показать всё</span>
+</button>
+<script src="main.js"></script>
+</body>
+</html>
