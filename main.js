@@ -2,6 +2,7 @@ let swiper = new Swiper(".mySwiper", {
     spaceBetween: -64,
     pagination: {
     el: ".mySwiper__pagination",
+    clickable: true,
 },
 mausewhell: true,
 keyboard: true,
