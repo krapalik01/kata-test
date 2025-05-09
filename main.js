@@ -9,16 +9,16 @@ keyboard: true,
 });
 
 
-const img = document.querySelector('.cards-button__img')
+const img = document.querySelector('.slide-button__img')
 const text = document.getElementById('text')
-const button1 = document.querySelector('.cards-button')
+const button1 = document.querySelector('.slide-button')
 
 
 button1.onclick = function() {
     const elements = document.getElementById('active');
         elements.classList.toggle('cards_active')
-    img.classList.toggle('cards-button__img_active')
-    if (img.classList.contains('cards-button__img_active')) {
+    img.classList.toggle('slide-button__img_active')
+    if (img.classList.contains('slide-button__img_active')) {
         text.textContent = 'Скрыть' 
     } else {
         text.textContent = 'Показать всё' 
