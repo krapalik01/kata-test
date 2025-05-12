@@ -365,8 +365,28 @@ text-transform: uppercase;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     width: 24px;
     height: 81px;
-    top: 87px;
-    left: 296px;
+    top: 668px;
+    left: 300px;
+
+}
+.fade-repair {
+    z-index: 10;
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 166px;
+    top: 885px;
+    left: 301px;
+}
+.fade-service {
+    z-index: 10;
+    position: absolute;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    width: 24px;
+    height: 200px;
+    top: 1168px;
+    left: 300px;
+
 }
 
  /* Свайпер мобилка*/
@@ -389,7 +409,10 @@ text-transform: uppercase;
     align-items: center;
 }
 .mySwiper__pagination {
-margin: 16px 0 24px 78px;
+    display: flex;
+    margin: 16px 0 24px 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .swiper-pagination-bullet {
@@ -677,6 +700,12 @@ display: none;
 }
 @media (min-width: 321px) {
     .fade {
+        display: none;
+    }
+    .fade-repair {
+        display: none;
+    }
+    .fade-service {
         display: none;
     }
 }
