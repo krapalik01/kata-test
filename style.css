@@ -248,7 +248,7 @@ ul {
 
 /* Бургер меню */
 .burgerMenu {  
-    display: flex;
+    display: none;
     flex-direction: column;
     position: fixed;
     background-color: #ffffff;
@@ -256,6 +256,19 @@ ul {
     overflow: hidden;
     width: 320px;
     height: 100%;
+    z-index: 15;
+}
+.burgerMenu::before {
+    z-index: -1;
+    position: fixed;
+    content: "";
+    background: white;
+    opacity: 0.96;
+    width: 100%;
+    height: 100%;
+}
+.burgerMenu_active {
+    display: flex;
 }
 .headerMenu {
     padding: 18px 0 0 24px;

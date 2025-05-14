@@ -71,3 +71,19 @@ buttonMore.addEventListener('click', function () {
         textMore.textContent = 'Читать далее' 
     }
 })
+
+const burgerButton = document.getElementById('burgerButton')
+const burger = document.getElementById('burger')
+const burgerMenu = document.querySelector('.burgerMenu')
+
+burgerButton.onclick = function() {
+        (burgerButton.classList.contains('header__icon--burger')) 
+        burgerButton.classList.remove('header__icon--burger')
+        burgerButton.classList.add('burger-icon--openBurger')
+        burgerMenu.classList.add('burgerMenu_active')
+}
+burger.onclick = function() {
+        burgerButton.classList.remove('burger-icon--openBurger')
+        burgerButton.classList.add('header__icon--burger')
+        burgerMenu.classList.remove('burgerMenu_active')
+}
