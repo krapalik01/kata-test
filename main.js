@@ -135,11 +135,58 @@ checkstatusExit.onclick = function() {
     burgerBrd.classList.remove('burger-bgr')
 }
 
+// Навигация с бургера
+
 const burgerItem = document.querySelectorAll('.navBurger__item')
 
-  for (let i = 0; i < burgerItem.length; i++) {
-burgerItem[i].onclick = function() {
+    for (let i = 0; i < burgerItem.length; i++) {
+    burgerItem[i].onclick = function() {
    burgerMenu.classList.remove('burgerMenu_active')
    burgerBrd.classList.remove('burger-bgr')
 }
     }
+
+    // Кнопка заказать  
+
+const listServiceImg = document.querySelectorAll('.list-service__img')
+
+    for (let i = 0; i < listServiceImg.length; i++) {
+    listServiceImg[i].onclick = function() {
+            checkstatusModal.classList.add('modal-active')
+            burgerBrd.classList.add('burger-bgr')
+    }
+         }
+const serviceListImg = document.querySelectorAll('.service-list__img')
+
+    for (let i = 0; i < serviceListImg.length; i++) {
+    serviceListImg[i].onclick = function() {
+            checkstatusModal.classList.add('modal-active')
+            burgerBrd.classList.add('burger-bgr')
+    }
+         }
+
+    // Кнопка телефон
+
+const contactIconCall = document.querySelector('.contact__icon--call')
+
+contactIconCall.onclick = function() {
+    checkstatusModal.classList.add('modal-active')
+    burgerBrd.classList.add('burger-bgr')
+    burgerMenu.classList.remove('burgerMenu_active')
+}
+
+    // Кнопка в модальном меню
+
+const modalButton = document.querySelectorAll('.modal__button')
+
+ for (let i = 0; i < modalButton.length; i++) {
+    modalButton[i].onclick = function() { 
+    window.location.reload()
+    }
+}
+
+    // свап языков
+
+function changeLang(swap) {
+    document.documentElement.lang = swap;
+}
