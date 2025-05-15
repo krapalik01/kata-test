@@ -1,7 +1,7 @@
 let swiper1 = new Swiper(".mySwiper-cards", {
     spaceBetween: -64,
     pagination: {
-    el: ".mySwiper__pagination",
+    el: ".mySwiper-pagination",
     clickable: true,
 },
 mausewhell: true,
@@ -10,7 +10,7 @@ keyboard: true,
 let swiper2 = new Swiper(".mySwiper-repair", {
     spaceBetween: -80,
     pagination: {
-    el: ".mySwiper__pagination",
+    el: ".mySwiper-pagination",
     clickable: true,
 },
 mausewhell: true,
@@ -19,7 +19,7 @@ keyboard: true,
 let swiper3 = new Swiper(".mySwiper-service", {
     spaceBetween: -44,
     pagination: {
-    el: ".mySwiper__pagination",
+    el: ".mySwiper-pagination",
     clickable: true,
 },
 mausewhell: true,
@@ -134,3 +134,12 @@ checkstatusExit.onclick = function() {
     checkstatusModal.classList.remove('modal-active')
     burgerBrd.classList.remove('burger-bgr')
 }
+
+const burgerItem = document.querySelectorAll('.navBurger__item')
+
+  for (let i = 0; i < burgerItem.length; i++) {
+burgerItem[i].onclick = function() {
+   burgerMenu.classList.remove('burgerMenu_active')
+   burgerBrd.classList.remove('burger-bgr')
+}
+    }

@@ -55,12 +55,12 @@
     <!-- Хедер -->
 <header class="header">
     <button id="burgerButton" class="header__icon header__icon--burger"></button>
-    <div class="header__stick_hiden"></div>
+    <div class="header__stick-hiden"></div>
     <img class="header__group" src="img/Group.svg" alt="">
-    <button class="header__icon_hiden header__icon--call"></button>
-    <button class="header__icon_hiden header__icon--chat"></button>
-    <button class="header__icon_hiden header__icon--profile"></button>
-    <div class="header__stick_hiden"></div>
+    <button class="header__icon-hiden header__icon-hiden--call"></button>
+    <button class="header__icon-hiden header__icon-hiden--chat"></button>
+    <button class="header__icon-hiden header__icon-hiden--profile"></button>
+    <div class="header__stick-hiden"></div>
     <button id="repair" class="header__icon header__icon--repair"></button>
     <button id="checkstatus" class="header__icon header__icon--checkstatus"></button>
 </header>
@@ -71,25 +71,25 @@
         <header class="headerMenu">
             <button id="burger" class="burger-icon burger-icon--openBurger"></button>
             <img src="img/Group.svg" alt="">
-            <button class="headerMenu__icon header__icon--search"></button>
+            <button class="headerMenu__icon headerMenu__icon--search"></button>
         </header>
         <nav class="mainMenu">
             <ul class="navBurger">
-                <li class="navBurger__item"><a href="#">Ремонт техники</a></li>
-                <li class="navBurger__item"><a href="#">Услуги и сервисы</a></li>
-                <li class="navBurger__item"><a href="#">Корпоративным клиентам</a></li>
-                <li class="navBurger__item"><a href="#">Продавцам Техники</a></li>
-                <li class="navBurger__item"><a href="#">Партнерам</a></li>
-                <li class="navBurger__item"><a href="#">Производителям</a></li>
-                <li class="navBurger__item"><a href="#">Наши сервисные центры</a></li>
-                <li class="navBurger__item"><a href="#">Контакты</a></li>
+                <li class="navBurger__item"><a href="#equipment-repair">Ремонт техники</a></li>
+                <li class="navBurger__item"><a href="#services">Услуги и сервисы</a></li>
+                <li class="navBurger__item"><a href="#corporate-clients">Корпоративным клиентам</a></li>
+                <li class="navBurger__item"><a href="#tech-sellers">Продавцам Техники</a></li>
+                <li class="navBurger__item"><a href="#partners">Партнерам</a></li>
+                <li class="navBurger__item"><a href="#manufacturers">Производителям</a></li>
+                <li class="navBurger__item"><a href="#service centers">Наши сервисные центры</a></li>
+                <li class="navBurger__item"><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
         <footer class="contact">
 <div class="contact-icons">
-    <button class="contact__icon header__icon--call"></button>
-    <button class="contact__icon header__icon--chat"></button>
-    <button class="contact__icon header__icon--profile"></button>
+    <button class="contact__icon contact__icon--call"></button>
+    <button class="contact__icon contact__icon--chat"></button>
+    <button class="contact__icon contact__icon--profile"></button>
 </div>
 <div class="contact__mail">
     <a href="mailto:mail@cps.com">mail@cps.com</a>
@@ -107,7 +107,7 @@
 
 <main>
     <!-- 2 копки в шапке -->
-    <section class="title">
+    <section id="service centers" class="title">
         <div class="title__img"></div>
         <h1 class="title__text">Услуги и сервисы</h1>
         <div class="title__items">
@@ -133,8 +133,8 @@
     </ul>
 </nav>
  <!-- Текст и Картинка -->
-<article class="article">
-    <div>
+<article id="partners" class="article">
+    <div id='manufacturers'>
         <p id="text-active" class="article__text">Мы являемся авторизованным
             сервисным центром по ремонту техники Dell. Только у нас вы можете
              отремонтировать свой ноутбук Dell с официальной гарантией производителя.  
@@ -151,7 +151,7 @@
     <img class="article__picture" src="img/article_picture.jpg" alt="">
 </article>
  <!-- Хедер карточек -->
-    <div class="head-cards">
+    <div id="equipment-repair" class="head-cards">
 <h1 class="head-cards__title" >Ремонт техники различных брендов</h1>
     </div>
 
@@ -210,7 +210,7 @@
                 </button>
             </li>
         </ul>
-        <div class="mySwiper__pagination"></div>
+        <div class="mySwiper-pagination"></div>
     </section>
 
     <!-- Свайпер десктоп -->
@@ -290,7 +290,7 @@
         <span id="text-1" class="slide-button__text">Показать всё</span>
     </button>
      <!-- Хедер карточек 2 -->
-    <div class="head-cards">
+    <div id="services" class="head-cards">
 <h1 class="head-cards__title" >Ремонт различных видов техники</h1>
     </div>
 
@@ -350,7 +350,7 @@
                 </button>
             </li>
         </ul>
-        <div class="mySwiper__pagination"></div>
+        <div class="mySwiper-pagination"></div>
     </section>
 
     <!-- Свайпер десктоп 2 -->
@@ -430,7 +430,7 @@
     </button>
 
          <!-- Хедер таблицы -->
-    <div class="head-cards">
+    <div id="corporate-clients" class="head-cards">
 <h1 class="head-cards__title" >Цены на услуги</h1>
     </div>
 
@@ -512,7 +512,7 @@
                 </button>
             </li>
         </ul>
-        <div class="mySwiper__pagination"></div>
+        <div class="mySwiper-pagination"></div>
     </section>
 
     <!-- Таблица с прайсом -->
@@ -558,7 +558,7 @@
     <div class="table-service__stick table-service__stick--four"></div>
 </section>
 
-<aside class="about">
+<aside id="tech-sellers" class="about">
 <p class="about__text">Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
 <a class="about__link" href="#"> Получить коммерческое предложение
     <div class="about__img"></div>
@@ -569,7 +569,7 @@
 </section>
 
 
-<footer class="footer-info">
+<footer id="contacts" class="footer-info">
     <div class="footer-info__stick"></div>
     <div class="footer-items">
     <span class="footer-items__text">© 2019 CPS Разработано командой Apesong </span>
