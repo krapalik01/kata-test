@@ -75,15 +75,62 @@ buttonMore.addEventListener('click', function () {
 const burgerButton = document.getElementById('burgerButton')
 const burger = document.getElementById('burger')
 const burgerMenu = document.querySelector('.burgerMenu')
+const burgerBrd = document.getElementById('burgerBrd')
 
 burgerButton.onclick = function() {
-        (burgerButton.classList.contains('header__icon--burger')) 
-        burgerButton.classList.remove('header__icon--burger')
-        burgerButton.classList.add('burger-icon--openBurger')
         burgerMenu.classList.add('burgerMenu_active')
+        burgerBrd.classList.add('burger-bgr')
 }
 burger.onclick = function() {
-        burgerButton.classList.remove('burger-icon--openBurger')
-        burgerButton.classList.add('header__icon--burger')
         burgerMenu.classList.remove('burgerMenu_active')
+        burgerBrd.classList.remove('burger-bgr')
+}
+
+const repair = document.getElementById('repair')
+const repairModal = document.getElementById('repairModal')
+const repairExit = document.getElementById('repairExit')
+const repairDesc = document.querySelector('.title__icon--repair')
+const checkstatus = document.getElementById('checkstatus')
+const checkstatusModal = document.getElementById('checkstatusModal')
+const checkstatusExit = document.getElementById('checkstatusExit')
+const checkstatusDesc = document.querySelector('.title__icon--checkstatus')
+
+// Репаир
+
+repair.onclick = function() {
+    repairModal.classList.add('modal-active')
+    burgerBrd.classList.add('burger-bgr')
+}
+repairExit.onclick = function() {
+    repairModal.classList.remove('modal-active')
+    burgerBrd.classList.remove('burger-bgr')
+}
+
+repairDesc.onclick = function() {
+    repairModal.classList.add('modal-active')
+    burgerBrd.classList.add('burger-bgr')
+}
+repairExit.onclick = function() {
+    repairModal.classList.remove('modal-active')
+    burgerBrd.classList.remove('burger-bgr')
+}
+
+// Чекстатус
+
+checkstatus.onclick = function() {
+    checkstatusModal.classList.add('modal-active')
+    burgerBrd.classList.add('burger-bgr')
+}
+checkstatusExit.onclick = function() {
+    checkstatusModal.classList.remove('modal-active')
+    burgerBrd.classList.remove('burger-bgr')
+}
+
+checkstatusDesc.onclick = function() {
+    checkstatusModal.classList.add('modal-active')
+    burgerBrd.classList.add('burger-bgr')
+}
+checkstatusExit.onclick = function() {
+    checkstatusModal.classList.remove('modal-active')
+    burgerBrd.classList.remove('burger-bgr')
 }

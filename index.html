@@ -1,7 +1,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <html lang="en"></html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Практическое задание</title>
     <link rel="stylesheet" href="style.css">
@@ -14,6 +13,7 @@
 <body>
 
     <!-- Бургер меню -->
+    <div id="burgerBrd"></div>
     <aside class="burgerMenu">
         <header class="headerMenu">
             <button id="burger" class="burger-icon burger-icon--openBurger"></button>
@@ -51,6 +51,44 @@
     </ul>
     </footer>
 </aside>
+
+    <!-- Модальное меню -->
+     <section  id="repairModal" class="modal">
+<button id="repairExit" class="modal__close-button"></button>
+
+
+<div class="modal-title">
+<div class="modal-title__img"></div>
+<h2 class="modal-title__text">Обратная связь</h2>
+</div>
+
+<ul class="modal__list">
+    <li><input type="text" placeholder="Имя" class="modal__input"></li>
+    <li><input type="number" placeholder="Телефон" class="modal__input"></li>
+    <li><input type="email" placeholder="Электронная почта" class="modal__input"></li>
+    <li><input type="text" placeholder="Сообщение" class="modal__input modal__input--phone"></li>
+</ul>
+
+<span class="modal__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></span>
+<button class="modal__button"></button>
+</section>
+ <!-- Модальное меню 2 -->
+     <section id="checkstatusModal" class="modal">
+<button id="checkstatusExit" class="modal__close-button"></button>
+
+
+<div class="modal-title">
+<div class="modal-title__img"></div>
+<h2 class="modal-title__text">Заказать звонок</h2>
+</div>
+
+<ul class="modal__list">
+    <li><input type="number" placeholder="Телефон" class="modal__input"></li>
+</ul>
+
+<span class="modal__text">Нажимая “отправить”, вы даете согласие на <a href="#">обработку персональных данных</a> и соглашаетесь с нашей <a href="#">политикой конфиденциальности</a></span>
+<button class="modal__button"></button>
+</section>
     <!-- Хедер -->
 <header class="header">
     <button id="burgerButton" class="header__icon header__icon--burger"></button>
@@ -60,8 +98,8 @@
     <button class="header__icon_hiden header__icon--chat"></button>
     <button class="header__icon_hiden header__icon--profile"></button>
     <div class="header__stick_hiden"></div>
-    <button class="header__icon header__icon--repair"></button>
-    <button class="header__icon header__icon--checkstatus"></button>
+    <button id="repair" class="header__icon header__icon--repair"></button>
+    <button id="checkstatus" class="header__icon header__icon--checkstatus"></button>
 </header>
 <main>
     <!-- 2 копки в шапке -->
@@ -71,10 +109,10 @@
         <div class="title__items">
             <label class="title__item">
                 <span class="title__iconText">Оставить заявку</span>
-                <button class="title__icon title__icon--repair"></button></label>
+                <button id="repair" class="title__icon title__icon--repair"></button></label>
             <label class="title__item">
                 <span class="title__iconText" >Статус ремонта</span>
-                <button class="title__icon title__icon--checkstatus"></button></lable>
+                <button id="checkstatus" class="title__icon title__icon--checkstatus"></button></lable>
         </div>
     </section>
 
