@@ -256,8 +256,9 @@ ul {
     overflow: hidden;
     width: 320px;
     height: 100%;
-    z-index: 15;
+    z-index: 8;
     touch-action: none;
+    margin-top: -111px;
 }
 .burger-bgr {
     z-index: 5;
@@ -657,7 +658,7 @@ display: none;
     top: 319px;
 }
 .about {
-    margin: 16px;
+    margin: 16px 16px 50px 16px;
 }
 .about__text {
     font-weight: 400;
@@ -685,7 +686,6 @@ display: none;
     background-image: url(img/more.svg);
 }
 .footer-info {
-    margin-top:40px ;
     margin-bottom: 19px;
 }
 .footer-items {
@@ -952,6 +952,7 @@ display: none;
     .modal {
         left: 936px;
         padding: 18px 32px 0px 32px;
+        margin-top: 0px;
     }
     .modal-title__img {
         margin-right: 28px;
@@ -965,4 +966,25 @@ display: none;
         .modal::before {
         margin-left: -33px;
     }
+    .burgerMenu {
+        display: block;
+        position: static;
+        box-shadow: none;
+        touch-action: auto;
+        margin-top: 0;
+        z-index: 3;
+    }
+    .burger-menu {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+    }
+    .contact {
+       margin: 180px 0 0 24px;
+    }
+    .burger-icon {
+        display: none;
+    }
+    .headerMenu img {
+    margin-left: 0px;
+}
 }
