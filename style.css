@@ -37,7 +37,6 @@ body ul {
   display: flex;
   justify-content: space-around;
 }
-
 .header__icon {
   margin-top: 24px;
   width: 40px;
@@ -129,7 +128,6 @@ body ul {
   width: 2px;
   height: 32px;
 }
-
 .header__stick-hiden {
   background-image: url(img/divider.svg);
   margin-top: 28px;
